@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  background-color: #f0f4f8; /* Soft light background */
+  color: #4a4a4a; /* Neutral gray for text */
+  font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 20px auto 40px auto;
+  font-size: 0.9em;
+  color: #6a737d; /* Muted gray */
+}
+.footer a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0077cc; /* Bright link color */
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #005499; /* Slightly darker link on hover */
+}
+
+#quote-box {
+  border-radius: 12px;
+  position: relative;
+  width: 460px;
+  padding: 40px;
+  display: table;
+  background-color: #ffffff; /* White card-style background */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+#quote-box .quote-text {
+  text-align: center;
+  width: 100%;
+  clear: both;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #2d3748; /* Deep gray for emphasis */
+  margin-bottom: 20px;
+}
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin-right: 0.5em;
+  color: #4299e1; /* Accent blue */
+}
+#quote-box .quote-author {
+  width: 100%;
+  clear: both;
+  padding-top: 15px;
+  font-size: 1em;
+  text-align: right;
+  color: #718096; /* Soft gray for author */
+}
+
+#quote-box .buttons {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#quote-box .buttons .button {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #3182ce; /* Vibrant blue */
+  outline: none;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  opacity: 1;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#quote-box .buttons .button:hover {
+  background-color: #225ea8; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+#quote-box .buttons .button#tweet-quote,
+#quote-box .buttons .button#tumblr-quote {
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  height: 38px;
+  width: 40px;
+  background-color: #63b3ed; /* Light blue for social buttons */
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#quote-box .buttons .button#tweet-quote:hover,
+#quote-box .buttons .button#tumblr-quote:hover {
+  background-color: #3182ce; /* Match button hover style */
+  transform: scale(1.1);
+}
+
+#quote-box .buttons .button#new-quote {
+  margin-left: auto;
+}
